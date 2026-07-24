@@ -1,0 +1,31 @@
+# Supabase CLI configuration.
+# `project_id` is the local project name; link to the hosted project with:
+#   supabase link --project-ref adkfxbkikctcrtutoqhp
+project_id = "optionsApp"
+
+[api]
+enabled = true
+port = 54321
+schemas = ["public"]
+max_rows = 1000
+
+[db]
+port = 54322
+major_version = 15
+
+[auth]
+enabled = true
+# Client-side auth: email + password to start. Social providers can be added later.
+site_url = "http://localhost:5173"
+additional_redirect_urls = ["http://localhost:5173"]
+enable_signup = true
+
+[auth.email]
+enable_signup = true
+enable_confirmations = true
+
+[edge_runtime]
+enabled = true
+
+[storage]
+enabled = true
