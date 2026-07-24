@@ -183,8 +183,6 @@ and strategy builder — not in front of education.
   against an independent method (MC within tolerance of closed form, tree converging to
   BSM). Put-call parity, and the Greeks' finite-difference agreement, are tested as
   invariants.
-- Conventional Commits. Branch per phase (`phase-03-quant-core`). No direct pushes to
-  `main`.
 - Secrets live in EAS secrets and Supabase Function secrets. A vendor API key in the app
   bundle is a shipping blocker — the client calls our Edge Function, which calls the
   vendor.
